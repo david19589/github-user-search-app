@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    width: 100vW;
+    height: 100vh;
+    padding-left: 24px;
+    padding-right: 24px;
+    background: #F6F8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-container {
+    max-width: 750px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.title {
+    color: #222731;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: default;
+}
+
+.theme {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.dark-light {
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    text-align: right;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.search-div {
+    border-radius: 15px;
+    background: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 7px 7px 16px;
+    width: 100%;
+}
+
+.input {
+    color: #222731;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.input::placeholder {
+    color: #4B6A9B;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.search-icon {
+    margin-right: 9px;
+}
+
+.search {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 10px;
+    background: #0079FF;
+    padding: 12.5px 14px 12.5px 18px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.search:hover {
+    background: #60ABFF;
+}
+
+.error {
+    color: #F74646;
+    width: 175px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 10px;
+    display: none;
+}
+
+.container {
+    border-radius: 15px;
+    background: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    padding: 33px 24px 49px 24px;
+}
+
+.box-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+.profile {
+    border-radius: 70px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    width: 70px;
+    height: 70px;
+    margin-right: 19px;
+}
+
+.name {
+    color: #2B3442;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.profile-link {
+    color: #0079FF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 6px;
+    width: 65px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.join-date {
+    color: #697C9A;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bio {
+    color: #4B6A9B;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 23px;
+}
+
+.box-2 {
+    border-radius: 10px;
+    background: #F6F8FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 18px 14px 19px 15px;
+    margin-bottom: 24px;
+}
+
+.reposts {
+    color: #4B6A9B;
+    text-align: center;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.number-of-reposts {
+    color: #2B3442;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.followers {
+    color: #4B6A9B;
+    text-align: center;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.number-of-followers {
+    color: #2B3442;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.following {
+    color: #4B6A9B;
+    text-align: center;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.number-of-following {
+    color: #2B3442;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.location-div {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-bottom: 17px;
+}
+
+.location {
+    color: #4B6A9B;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.github-link-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 17px;
+}
+
+.githubBlog-link {
+    color: #4B6A9B;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
+
+.twitter-link-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 17px;
+}
+
+.twitter-link {
+    color: #4B6A9B;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.company-link-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 17px;
+}
+
+.company-link {
+    color: #4B6A9B;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.themeSelected {
+    background: #141D2F;
+}
+
+#wall{
+    width: 239px;
+    height: 20px;
+    transform: translate(84px, -78px);
+    display: none;
+}
+
+@media(min-width: 768px) {
+    .full-container {
+        width: 573px;
+    }
+
+    .input {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .search {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 40px;
+    }
+
+    .profile {
+        width: 117px;
+        height: 117px;
+        border-radius: 117px;
+    }
+
+    .name {
+        font-size: 26px;
+    }
+
+    .profile-link {
+        font-size: 16px;
+    }
+
+    .join-date {
+        font-size: 15px;
+    }
+
+    .bio {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .reposts {
+        font-size: 13px;
+    }
+
+    .followers {
+        font-size: 13px;
+    }
+
+    .following {
+        font-size: 13px;
+    }
+
+    .number-of-reposts {
+        font-size: 22px;
+        text-align: start;
+    }
+
+    .number-of-followers {
+        font-size: 22px;
+        text-align: start;
+    }
+
+    .number-of-following {
+        font-size: 22px;
+        text-align: start;
+    }
+
+    .box-3 {
+        display: flex;
+        justify-content: space-around;
+        margin-left: -35px;
+    }
+
+    .location {
+        font-size: 15px;
+    }
+
+    .githubBlog-link {
+        font-size: 15px;
+    }
+
+    .twitter-link {
+        font-size: 15px;
+    }
+
+    .company-link {
+        font-size: 15px;
+    }
+    .error{
+        font-size: 15px;
+    }
+}
+
+@media(min-width: 1440px) {
+    .full-container {
+        width: 730px;
+    }
+
+    .bio {
+        margin-left: 138px;
+    }
+
+    .box-1 {
+        margin-bottom: -20px;
+    }
+
+    .box-2 {
+        margin-left: 138px;
+    }
+
+    .box-3 {
+        margin-left: 95px;
+    }
+
+    .join-date {
+        transform: translate(335px, -60px);
+    }
+}
